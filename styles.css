@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+  min-height: 100dvh;
+}
+main {
+  display: grid;
+  gap: 16px;
+  place-items: center;
+  text-align: center;
+}
+.result {
+  border: 2px solid red;
+  width: 250px;
+  height: 250px;
+  display: grid;
+  place-items: center;
+}
+.result.light {
+  background: white;
+}
+.result.dark {
+  background: #0d1117;
+}
+.result div {
+  border: 5px solid transparent;
+  border-radius: 16px;
+  font-size: 24px;
+  padding: 25px;
+}
